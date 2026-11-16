@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahdi Dortaj · QA Engineer</title>
+<meta name="description" content="Mahdi Dortaj: AI-enabled QA Engineer and QA Lead. Manual and automated testing (Pytest, Playwright, Selenium), API testing, Cloud and TechOps background, product and customer focused.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Mahdi Dortaj · QA Engineer">
+<meta property="og:description" content="AI-enabled QA Engineer with a Cloud, TechOps and product background. 900+ defects found across 5 products; built a QA team from zero.">
+<meta property="og:url" content="https://mdortaj.github.io/">
+<link rel="canonical" href="https://mdortaj.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f766e'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='15' font-weight='700' fill='white' text-anchor='middle'%3EMD%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mahdi Dortaj",
+  "jobTitle": "QA Engineer",
+  "url": "https://mdortaj.github.io/",
+  "email": "mailto:md4956.md@gmail.com",
+  "address": {"@type": "PostalAddress", "addressLocality": "Tehran", "addressCountry": "IR"},
+  "sameAs": ["https://www.linkedin.com/in/mahdi-dortaj/", "https://github.com/mdortaj"],
+  "knowsAbout": ["Quality Assurance", "Software Testing", "Test Automation", "Pytest", "Playwright", "Selenium", "API Testing", "SQL", "Kubernetes", "AI-assisted testing"],
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "Islamic Azad University of Kerman"}
+}
+</script>
+<style>
+:root {
+  --bg: #fafaf9; --surface: #ffffff; --text: #1c1917; --muted: #57534e; --line: #e7e5e4;
+  --accent: #0f766e; --accent-soft: #ccfbf1; --pass: #15803d; --code-bg: #f5f5f4;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0c0a09; --surface: #1c1917; --text: #f5f5f4; --muted: #a8a29e; --line: #292524;
+    --accent: #2dd4bf; --accent-soft: #134e4a; --pass: #4ade80; --code-bg: #171412;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0c0a09; --surface: #1c1917; --text: #f5f5f4; --muted: #a8a29e; --line: #292524;
+  --accent: #2dd4bf; --accent-soft: #134e4a; --pass: #4ade80; --code-bg: #171412;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+main { max-width: 860px; margin: 0 auto; padding: 48px 16px 64px; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+strong { font-weight: 650; }
+h1 { font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.1; margin: 0; letter-spacing: -0.02em; }
+h2 {
+  font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted);
+  margin: 56px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
+}
+h3 { font-size: 1.1rem; margin: 0; line-height: 1.35; }
+p { margin: 0 0 12px; }
+ul { margin: 8px 0 0; padding-left: 20px; }
+li { margin-bottom: 6px; }
+
+.role { font-size: 1.2rem; color: var(--accent); font-weight: 600; margin: 8px 0 16px; }
+.lead { font-size: 1.1rem; max-width: 62ch; }
+.contact { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 20px 0 0; padding: 0; list-style: none; color: var(--muted); }
+.contact li { margin: 0; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 18px;
+  border-radius: 10px; font: inherit; font-weight: 600; text-decoration: none; cursor: pointer;
+  border: 1px solid var(--accent); background: var(--accent); color: var(--bg);
+}
+.btn.ghost { background: transparent; color: var(--accent); }
+
+/* QA-themed hero: the CV as a passing test run */
+.run {
+  margin-top: 32px; background: var(--code-bg); border: 1px solid var(--line); border-radius: 12px;
+  padding: 16px 20px; font: 14px/1.7 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; overflow-wrap: anywhere;
+}
+.run .cmd { color: var(--muted); }
+.run ul { list-style: none; padding: 0; margin: 8px 0; }
+.run li { margin: 0; }
+.run .ok { color: var(--pass); font-weight: 700; }
+.run .sum { color: var(--pass); }
+
+.cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+.card .tag { font-size: 0.8rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; }
+.card h3 { margin: 4px 0 12px; }
+.star { margin: 0; }
+.star dt { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.star dd { margin: 0 0 10px; }
+.result { background: var(--accent-soft); border-radius: 8px; padding: 6px 10px; }
+.stack { font-size: 0.85rem; color: var(--muted); margin: 12px 0 0; }
+.links { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 12px; font-weight: 600; }
+
+.job { display: grid; grid-template-columns: 170px 1fr; gap: 4px 24px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.job:last-child { border-bottom: 0; }
+.when { color: var(--muted); font-size: 0.9rem; }
+.org { color: var(--muted); margin: 2px 0 0; }
+
+.skills { display: grid; gap: 12px 24px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+.skills h3 { font-size: 0.95rem; margin-bottom: 4px; }
+.skills p { color: var(--muted); font-size: 0.95rem; }
+.skills strong { color: var(--text); }
+.plain { list-style: none; padding: 0; }
+footer { margin-top: 56px; color: var(--muted); font-size: 0.9rem; }
+
+@media (max-width: 600px) {
+  main { padding-top: 32px; }
+  .job { grid-template-columns: 1fr; }
+}
+
+/* Print: the "Save as PDF" button and Ctrl/Cmd+P give the same clean, ATS-readable document */
+@media print {
+  :root, :root[data-theme] {
+    --bg: #fff; --surface: #fff; --text: #000; --muted: #333; --line: #ccc;
+    --accent: #000; --accent-soft: transparent; --pass: #000; --code-bg: #fff;
+  }
+  @page { margin: 12mm; }
+  html { font-size: 9pt; }
+  body { font-size: 1rem; line-height: 1.4; }
+  main { max-width: none; padding: 0; }
+  .actions, .no-print { display: none !important; }
+  h1 { font-size: 2rem; }
+  h2 { margin: 14px 0 6px; padding-bottom: 4px; break-after: avoid; }
+  .role { margin: 4px 0 8px; }
+  .lead { max-width: none; }
+  .contact { margin-top: 8px; }
+  .card, .job { break-inside: avoid; }
+  .cards { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .card { padding: 8px 10px; border-radius: 6px; }
+  .run { padding: 6px 12px; margin-top: 10px; font-size: 0.9rem; line-height: 1.5; }
+  .result { padding: 0; }
+  .job { grid-template-columns: 120px 1fr; padding: 6px 0; }
+  li { margin-bottom: 2px; }
+  a { color: #000; text-decoration: none; }
+  .links a::after { content: " (" attr(href) ")"; font-weight: 400; font-size: 0.85em; }
+}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Mahdi Dortaj</h1>
+    <p class="role">QA Engineer · AI-enabled · Product &amp; customer minded</p>
+    <p class="lead"><strong>QA Lead</strong> who built a QA team from zero for internet-banking products, after finding <strong>900+ defects</strong> across 5 cybersecurity products. I bring years of <strong>Cloud and TechOps</strong> experience (65k+ customers, 25k+ VPS servers), <strong>AI-assisted</strong> testing and tooling, and the habit of judging quality by what the customer actually experiences.</p>
+    <ul class="contact">
+      <li><a href="mailto:md4956.md@gmail.com">md4956.md@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/mahdi-dortaj/">linkedin.com/in/mahdi-dortaj</a></li>
+      <li><a href="https://github.com/mdortaj">github.com/mdortaj</a></li>
+      <li>Tehran, Iran</li>
+    </ul>
+    <div class="actions">
+      <button class="btn" type="button" onclick="window.print()">Save as PDF</button>
+      <a class="btn ghost" href="mailto:md4956.md@gmail.com">Email me</a>
+    </div>
+
+    <div class="run" aria-label="Career highlights">
+      <div class="cmd">$ pytest career/ -q</div>
+      <ul>
+        <li><span class="ok">PASSED</span> found 900+ defects (300+ high priority) across 5 products</li>
+        <li><span class="ok">PASSED</span> built a QA team and process from zero (internet banking)</li>
+        <li><span class="ok">PASSED</span> supported 65k+ customers and 25k+ VPS servers</li>
+        <li><span class="ok">PASSED</span> led and trained a support team of 20+</li>
+      </ul>
+      <div class="sum">===== 4 passed, 0 failed =====</div>
+    </div>
+  </header>
+
+  <section aria-labelledby="cases">
+    <h2 id="cases">Case studies</h2>
+    <div class="cards">
+      <article class="card">
+        <span class="tag">QA leadership</span>
+        <h3>Building a QA function from zero for internet banking</h3>
+        <dl class="star">
+          <dt>Situation</dt><dd>SabaPardazesh shipped Internet Banking, PWA and Admin Panel products with <strong>no QA team or process</strong>.</dd>
+          <dt>Action</dt><dd>Defined <strong>QA processes, standards and workflows</strong> inside Scrum; added <strong>shift-left</strong> reviews of requirements and Figma designs; <strong>mentored 2 junior QA engineers</strong>.</dd>
+          <dt>Result</dt><dd class="result">QA now runs from requirements to release validation on all three products.</dd>
+        </dl>
+        <p class="stack">Jira · Confluence · Postman · DevTools · Figma</p>
+      </article>
+      <article class="card">
+        <span class="tag">Testing at scale</span>
+        <h3>900+ defects across 5 cybersecurity products</h3>
+        <dl class="star">
+          <dt>Situation</dt><dd>Graph Inc. had 5 B2B products moving through dev and staging at the same time.</dd>
+          <dt>Action</dt><dd>Ran the <strong>full STLC</strong>: <strong>API testing</strong> with Python and cURL, frontend and <strong>end-to-end</strong> testing, then started <strong>automation with Pytest, Playwright and Selenium</strong>.</dd>
+          <dt>Result</dt><dd class="result"><strong>900+ defects (300+ high priority)</strong> found in 11 months, before release.</dd>
+        </dl>
+        <p class="stack">Python · Pytest · Playwright · Selenium · cURL · Swagger</p>
+      </article>
+      <article class="card">
+        <span class="tag">Product &amp; customer</span>
+        <h3>Turning 65k customers' feedback into product decisions</h3>
+        <dl class="star">
+          <dt>Situation</dt><dd>At Cloudzy, support saw problems that never reached the product roadmap.</dd>
+          <dt>Action</dt><dd>As <strong>acting QA &amp; Product Owner</strong>, prioritized support-driven requirements, wrote <strong>PRDs and user stories</strong>, and backed them with <strong>SQL and Metabase</strong> data.</dd>
+          <dt>Result</dt><dd class="result">Data-backed feedback shaped usability fixes; reports used for <strong>C-level decisions</strong>.</dd>
+        </dl>
+        <p class="stack">SQL · Metabase · Grafana · Agile</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="projects">
+    <h2 id="projects">Projects</h2>
+    <div class="cards">
+      <article class="card">
+        <span class="tag">QA tooling</span>
+        <h3>Random File Generator</h3>
+        <p>Generates files and archives of exact sizes to test uploads, storage and transfers. <strong>SHA-384 checksums</strong> for verification, <strong>reproducible runs</strong> with a seed, and input validation before anything is written.</p>
+        <p class="stack">Python · CLI · zip/tar · no dependencies</p>
+        <p class="links"><a href="https://github.com/mdortaj/random-file-generator">Code</a></p>
+      </article>
+      <article class="card">
+        <span class="tag">Product · live</span>
+        <h3>Balanzo</h3>
+        <p>Splits shared expenses into the fewest payments. Works <strong>offline on phone and desktop</strong>, and is tested across <strong>Chrome, Safari and Firefox</strong> in light and dark mode.</p>
+        <p class="stack">Python · JavaScript · PWA · GitHub Pages</p>
+        <p class="links"><a href="https://mdortaj.github.io/balanzo/">Try it live</a><a href="https://github.com/mdortaj/balanzo">Code</a></p>
+      </article>
+      <article class="card">
+        <span class="tag">Cloud &amp; TechOps</span>
+        <h3>Kubernetes dashboard on a self-built HA cluster</h3>
+        <p>Django app showing live pods, nodes and autoscalers, deployed on a <strong>3-control-plane Kubernetes cluster</strong> with <strong>GitLab CI/CD</strong> and <strong>k6 load tests</strong>.</p>
+        <p class="stack">Kubernetes · kubespray · Cilium · Longhorn · Django · k6</p>
+        <p class="links">Code available on request</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="experience">
+    <h2 id="experience">Experience</h2>
+    <div class="job">
+      <div class="when">Jun 2026 – Present<br>Tehran, Iran</div>
+      <div>
+        <h3>QA Lead</h3>
+        <p class="org">SabaPardazesh PJS Co. · Internet Banking and ICT</p>
+        <ul>
+          <li>Established the QA team from the ground up, <strong>defining QA processes, standards, documentation and workflows</strong> in Agile/Scrum.</li>
+          <li>Owned <strong>end-to-end QA</strong> for Internet Banking, PWA and Admin Panel: requirement and <strong>Figma review</strong>, test planning, execution, defect management, release validation.</li>
+          <li><strong>Mentored and trained 2 junior QA engineers</strong>.</li>
+          <li>Led functional, exploratory, regression, integration, <strong>UI/UX</strong> and end-to-end testing.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job">
+      <div class="when">Jul 2025 – Jun 2026<br>Tehran, Iran</div>
+      <div>
+        <h3>QA Engineer</h3>
+        <p class="org">Graph Inc. · Cybersecurity, B2B</p>
+        <ul>
+          <li>Ran end-to-end STLC across <strong>5 products</strong>; found and reproduced <strong>900+ defects (300+ high priority)</strong> in 11 months.</li>
+          <li><strong>API testing</strong> with Python and cURL: endpoints, response structures, authentication, backend integrations.</li>
+          <li>Wrote <strong>automated tests with Pytest, Playwright and Selenium</strong>, growing automated coverage.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job">
+      <div class="when">May 2024 – May 2025<br>Tehran, Iran</div>
+      <div>
+        <h3>Acting QA &amp; Product Owner</h3>
+        <p class="org">Cloudzy · Cloud services, B2C and B2B</p>
+        <ul>
+          <li>Prioritized support-driven requirements from <strong>65k+ customers</strong> and <strong>25k+ VPS servers</strong>.</li>
+          <li><strong>End-to-end testing</strong> of features with developers and infrastructure teams.</li>
+          <li>Wrote <strong>PRDs and user stories</strong>; joined sprint planning and backlog grooming.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job">
+      <div class="when">Aug 2020 – May 2025<br>Hybrid</div>
+      <div>
+        <h3>Support Supervisor</h3>
+        <p class="org">Cloudzy</p>
+        <ul>
+          <li>Led and trained a <strong>team of 20+</strong>, improving response times and efficiency.</li>
+          <li>Primary escalation point for <strong>infrastructure and operational</strong> issues on Windows/Linux VPS.</li>
+          <li>Produced reports used for <strong>C-level decisions</strong>.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job">
+      <div class="when">Jun 2018 – Aug 2020<br>Remote</div>
+      <div>
+        <h3>Technical Support Specialist</h3>
+        <p class="org">Cloudzy</p>
+        <ul>
+          <li>Technical support (servers, VMs, network) for <strong>60k+ users</strong> and <strong>15k+ concurrent VPS servers</strong>.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="job">
+      <div class="when">Oct 2017 – Mar 2019<br>Kerman, Iran</div>
+      <div>
+        <h3>Junior Backend Developer</h3>
+        <p class="org">Payam Ghasedak Co.</p>
+        <ul>
+          <li>Built web applications with <strong>Python (Flask, Django)</strong>, JavaScript and HTML/CSS.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="skills">
+    <h2 id="skills">Skills</h2>
+    <div class="skills">
+      <div><h3>Quality engineering</h3><p><strong>Manual testing</strong> (functional, exploratory, regression, smoke, sanity, integration, UI/UX, E2E), <strong>shift-left QA</strong>, test case design, <strong>defect management</strong>, QA process design.</p></div>
+      <div><h3>Automation &amp; API</h3><p><strong>Pytest</strong>, <strong>Playwright</strong>, <strong>Selenium</strong>, <strong>Postman</strong>, cURL, Swagger, Python, k6 load testing.</p></div>
+      <div><h3>AI-enabled QA</h3><p><strong>AI-assisted</strong> test design, test data and tooling with LLM coding assistants (Claude Code).</p></div>
+      <div><h3>Cloud &amp; TechOps</h3><p><strong>Linux/Windows servers</strong>, VPS, <strong>Kubernetes</strong>, CI/CD (GitLab), Grafana monitoring.</p></div>
+      <div><h3>Data</h3><p><strong>SQL</strong>, <strong>Metabase</strong>, data validation and reporting for decision-making.</p></div>
+      <div><h3>Product &amp; teams</h3><p><strong>Agile/Scrum</strong>, PRDs, user stories, <strong>QA leadership and mentoring</strong>, Jira, Confluence.</p></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="edu">
+    <h2 id="edu">Education, courses &amp; languages</h2>
+    <ul class="plain">
+      <li><strong>B.Sc. Computer Science, Software Engineering</strong>, IAU of Kerman, 2015 – 2021</li>
+      <li>IBM Product Manager (Coursera, ongoing) · Python Introduction Certificate, 97/100 (2018)</li>
+      <li><strong>English</strong> C1 (IELTS 7) · <strong>German</strong> A2 · <strong>Persian</strong> native</li>
+    </ul>
+  </section>
+
+  <footer class="no-print">Open to QA Engineer and QA Lead roles. <a href="mailto:md4956.md@gmail.com">Get in touch</a>.</footer>
+</main>
+<!-- Free, cookie-less visit stats; ?ref=cv / ?ref=qr in the link shows where a visit came from -->
+<script data-goatcounter="https://mdortaj.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
